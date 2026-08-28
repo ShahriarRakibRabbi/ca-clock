@@ -71,10 +71,10 @@ At a heavy write load, 1024 pages and 64 frames:
 | Policy | Disk writes | Failed searches | Cost vs CLOCK |
 |---|---|---|---|
 | CLOCK (baseline) | 5,010 | 0.0% | |
-| Unlimited protection | 4,406 | **59.2%** | −7.7% |
-| Limited to 4 skips | **4,257** | **0.0%** | **−10.2%** |
+| Unlimited protection | 4,406 | **59.2%** |
+| Limited to 4 skips | **4,257** | **0.0%** | 
 
-The middle row is the interesting one. It reports a 7.7% improvement while failing to behave like CLOCK in 59% of its evictions. It had degraded into near-random replacement, and the headline number hid that completely.
+The middle row is the interesting one. It reports an improvement while failing to behave like CLOCK in 59% of its evictions.
 
 Capping the skips fixed it. A page can dodge eviction, but only *k* times, then it goes. That version is cheaper *and* it never runs out of candidates, because the scan is bounded by construction.
 
