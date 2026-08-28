@@ -4,7 +4,7 @@ A demand-paging system for Windows that runs on real CPU page faults. Not a simu
 
 Built for CSE 323, Operating Systems.
 
-**▶ [Watch the demo video]([(https://youtu.be/wqBCxjAX8po?si=2k3mrTZ-J1p9aRNx)])** (about 4 minutes)
+**▶ [Watch the demo video]([https://youtu.be/wqBCxjAX8po?si=2k3mrTZ-J1p9aRNx])** (about 4 minutes)
 
 ![write-backs vs write ratio](analysis/fig1_writebacks.svg)
 
