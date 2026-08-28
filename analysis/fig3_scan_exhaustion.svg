@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460" font-family="Segoe UI, Arial, sans-serif">
+<rect width="760" height="460" fill="white"/>
+<text x="78" y="26" font-size="16" font-weight="600" fill="#111">Fig 3  Where CA-CLOCK stops behaving like CLOCK</text>
+<text x="78" y="46" font-size="11" fill="#666">Probabilistic arms collapse under write pressure; bounded-k cannot, by construction.</text>
+<line x1="78.0" y1="398.0" x2="570.0" y2="398.0" stroke="#e6e6e6"/>
+<text x="70.0" y="402.0" font-size="11" fill="#555" text-anchor="end">0.00</text>
+<line x1="78.0" y1="330.8" x2="570.0" y2="330.8" stroke="#e6e6e6"/>
+<text x="70.0" y="334.8" font-size="11" fill="#555" text-anchor="end">12.8</text>
+<line x1="78.0" y1="263.6" x2="570.0" y2="263.6" stroke="#e6e6e6"/>
+<text x="70.0" y="267.6" font-size="11" fill="#555" text-anchor="end">25.6</text>
+<line x1="78.0" y1="196.4" x2="570.0" y2="196.4" stroke="#e6e6e6"/>
+<text x="70.0" y="200.4" font-size="11" fill="#555" text-anchor="end">38.3</text>
+<line x1="78.0" y1="129.2" x2="570.0" y2="129.2" stroke="#e6e6e6"/>
+<text x="70.0" y="133.2" font-size="11" fill="#555" text-anchor="end">51.1</text>
+<line x1="78.0" y1="62.0" x2="570.0" y2="62.0" stroke="#e6e6e6"/>
+<text x="70.0" y="66.0" font-size="11" fill="#555" text-anchor="end">63.9</text>
+<line x1="78.0" y1="62.0" x2="78.0" y2="398.0" stroke="#e6e6e6"/>
+<text x="78.0" y="416.0" font-size="11" fill="#555" text-anchor="middle">0.00</text>
+<line x1="293.2" y1="62.0" x2="293.2" y2="398.0" stroke="#e6e6e6"/>
+<text x="293.2" y="416.0" font-size="11" fill="#555" text-anchor="middle">10.5</text>
+<line x1="303.5" y1="62.0" x2="303.5" y2="398.0" stroke="#e6e6e6"/>
+<text x="303.5" y="416.0" font-size="11" fill="#555" text-anchor="middle">11.0</text>
+<line x1="508.5" y1="62.0" x2="508.5" y2="398.0" stroke="#e6e6e6"/>
+<text x="508.5" y="416.0" font-size="11" fill="#555" text-anchor="middle">21.0</text>
+<line x1="529.0" y1="62.0" x2="529.0" y2="398.0" stroke="#e6e6e6"/>
+<text x="529.0" y="416.0" font-size="11" fill="#555" text-anchor="middle">22.0</text>
+<line x1="570.0" y1="62.0" x2="570.0" y2="398.0" stroke="#e6e6e6"/>
+<text x="570.0" y="416.0" font-size="11" fill="#555" text-anchor="middle">24.0</text>
+<rect x="78" y="62" width="492" height="336" fill="none" stroke="#999"/>
+<text x="324.0" y="442.0" font-size="12" fill="#333" text-anchor="middle">policy arm (CLOCK -&gt; alpha -&gt; bounded k)</text>
+<text x="18" y="230.0" font-size="12" fill="#333" text-anchor="middle" transform="rotate(-90 18 230.0)">% of evictions with no eligible victim</text>
+<path d="M78.0 398.0 L293.2 398.0 L303.5 398.0 L508.5 398.0 L529.0 398.0 L570.0 398.0" fill="none" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="78.0" cy="398.0" r="3" fill="#1f77b4"/>
+<circle cx="293.2" cy="398.0" r="3" fill="#1f77b4"/>
+<circle cx="303.5" cy="398.0" r="3" fill="#1f77b4"/>
+<circle cx="508.5" cy="398.0" r="3" fill="#1f77b4"/>
+<circle cx="529.0" cy="398.0" r="3" fill="#1f77b4"/>
+<circle cx="570.0" cy="398.0" r="3" fill="#1f77b4"/>
+<line x1="584" y1="68.0" x2="610" y2="68.0" stroke="#1f77b4" stroke-width="2"/>
+<text x="616" y="72.0" font-size="11" fill="#333">write_ratio=0.20</text>
+<path d="M78.0 398.0 L293.2 398.0 L303.5 398.0 L508.5 398.0 L529.0 398.0 L570.0 398.0" fill="none" stroke="#d62728" stroke-width="2"/>
+<circle cx="78.0" cy="398.0" r="3" fill="#d62728"/>
+<circle cx="293.2" cy="398.0" r="3" fill="#d62728"/>
+<circle cx="303.5" cy="398.0" r="3" fill="#d62728"/>
+<circle cx="508.5" cy="398.0" r="3" fill="#d62728"/>
+<circle cx="529.0" cy="398.0" r="3" fill="#d62728"/>
+<circle cx="570.0" cy="398.0" r="3" fill="#d62728"/>
+<line x1="584" y1="88.0" x2="610" y2="88.0" stroke="#d62728" stroke-width="2"/>
+<text x="616" y="92.0" font-size="11" fill="#333">write_ratio=0.40</text>
+<path d="M78.0 398.0 L293.2 398.0 L303.5 86.9 L508.5 398.0 L529.0 398.0 L570.0 398.0" fill="none" stroke="#2ca02c" stroke-width="2"/>
+<circle cx="78.0" cy="398.0" r="3" fill="#2ca02c"/>
+<circle cx="293.2" cy="398.0" r="3" fill="#2ca02c"/>
+<circle cx="303.5" cy="86.9" r="3" fill="#2ca02c"/>
+<circle cx="508.5" cy="398.0" r="3" fill="#2ca02c"/>
+<circle cx="529.0" cy="398.0" r="3" fill="#2ca02c"/>
+<circle cx="570.0" cy="398.0" r="3" fill="#2ca02c"/>
+<line x1="584" y1="108.0" x2="610" y2="108.0" stroke="#2ca02c" stroke-width="2"/>
+<text x="616" y="112.0" font-size="11" fill="#333">write_ratio=0.80</text>
+</svg>

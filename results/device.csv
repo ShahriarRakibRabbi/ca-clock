@@ -1,0 +1,2 @@
+samples,durable_writes,read_us_median,write_us_median,read_us_p90,write_us_p90,r_hat
+200,false,1061.150,630.300,9715.300,917.100,0.594
