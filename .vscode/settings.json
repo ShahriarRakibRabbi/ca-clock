@@ -1,0 +1,21 @@
+{
+    "//c++": "The build is the authority on whether the C++ is correct: build.bat runs g++ with -Wall -Wextra and it passes with no warnings. These settings only stop the editor's IntelliSense from disagreeing with the compiler.",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.compilerPath": "C:/MinGW/bin/g++.exe",
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x86",
+    "files.associations": {
+        "*.h": "cpp",
+        "*.ini": "ini"
+    },
+
+    "//python": "analyse.py is plain standard-library Python and passes py_compile. Pylint and flake8 default to a 79-column limit and to naming rules written for library code; neither is an error, and neither is worth restructuring a 200-line analysis script around.",
+    "python.analysis.typeCheckingMode": "basic",
+    "flake8.args": [
+        "--max-line-length=120",
+        "--extend-ignore=E501,E226"
+    ],
+    "pylint.args": [
+        "--max-line-length=120",
+        "--disable=missing-module-docstring,missing-function-docstring,invalid-name,consider-using-f-string"
+    ]
+}

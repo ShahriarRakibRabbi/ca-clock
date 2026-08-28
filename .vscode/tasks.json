@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "${workspaceFolder}/build.bat",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "//": "problemMatcher $gcc makes real compiler errors appear in the Problems panel, so that panel shows what the compiler thinks rather than only what IntelliSense guesses.",
+            "problemMatcher": "$gcc",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "run self-tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/selftest.exe",
+            "dependsOn": "build",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "calibrate device",
+            "type": "shell",
+            "command": "${workspaceFolder}/ca-clock.exe",
+            "args": ["config/experiment.ini", "--calibrate"],
+            "dependsOn": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "run demo",
+            "type": "shell",
+            "command": "${workspaceFolder}/ca-clock.exe",
+            "args": ["config/demo.ini"],
+            "dependsOn": "build",
+            "problemMatcher": []
+        }
+    ]
+}

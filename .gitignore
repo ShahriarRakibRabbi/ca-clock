@@ -1,0 +1,29 @@
+# Build output. build.bat regenerates all of it.
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# Experiment scratch data. backing.dat alone is 16 MB and every run rewrites it,
+# so committing it once would bloat the repo permanently for no benefit.
+results/*.dat
+results/_sweep.ini
+
+# Per-run output. Only sample_runs.csv and device.csv are committed, because
+# those two are what analyse.py needs to redraw the figures without sitting
+# through a 45 minute sweep.
+results/debug_runs.csv
+results/demo_runs.csv
+results/runs.csv
+results/selftest_runs.csv
+
+__pycache__/
+
+# The editor config is kept on purpose. Without c_cpp_properties.json, VS Code
+# guesses the wrong compiler and marks almost every line as an error even though
+# the project builds cleanly. Everything else VS Code drops in here is
+# per-machine state and does not belong in the repo.
+.vscode/*
+!.vscode/c_cpp_properties.json
+!.vscode/settings.json
+!.vscode/tasks.json

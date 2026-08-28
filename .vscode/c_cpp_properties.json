@@ -1,0 +1,31 @@
+{
+    "//": "Tells the VS Code C/C++ extension which compiler and headers this project uses. Without this file the extension guesses MSVC, fails to find <string>/<vector>/<windows.h>, and then reports errors on almost every line of every file. The code itself compiles cleanly with g++.",
+    "configurations": [
+        {
+            "name": "MinGW",
+            "compilerPath": "C:/MinGW/bin/g++.exe",
+            "compilerArgs": [
+                "-std=c++17"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "//intelliSenseMode": "MinGW.org GCC 6.3.0 is a 32-bit (mingw32) toolchain, so this must be x86 and not x64, or the extension resolves the wrong system headers.",
+            "intelliSenseMode": "windows-gcc-x86",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_WIN32",
+                "WIN32"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/src"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
