@@ -99,11 +99,9 @@ Timing does not reproduce. Two runs doing identical work reported 14 s and 28 s 
 
 ## Limitations
 
-Everything here runs single-threaded in user space, on one laptop with one hard drive. An SSD would give you different numbers, and probably a narrower gap between reading and writing.
-
 The sweep only covers normal write-through mode. Durable mode is the case where a write costs twenty-three reads, which is exactly where protecting changed pages should pay off best, and I calibrated it but never swept it. That's the obvious next experiment.
 
-Workloads are synthetic. Zipf and sequential patterns, not traces from real programs. And the protection strength is a number you pass in, not something the program works out for itself from the disk measurement.
+Workloads are Zipf and sequential patterns, not traces from real programs. And the protection strength is a number you pass in, not something the program works out for itself from the disk measurement.
 
 ## References
 
@@ -113,5 +111,3 @@ The core idea here is not mine. Two papers do the same thing:
 - Jung et al. "LRU-WSR: Integration of LRU and Writes Sequence Reordering for Flash Memory." IEEE Trans. Consumer Electronics, 2008. Gives a changed page one extra chance.
 
 Both evaluate in simulation against an assumed cost ratio. This project runs on real page faults, measures the ratio on the actual machine, and reports when the algorithm stops working properly.
-
-Silberschatz, Galvin and Gagne, *Operating System Concepts*, for the page replacement background. Microsoft's Win32 documentation for `VirtualAlloc`, `VirtualProtect`, `AddVectoredExceptionHandler`, `CreateFile` and `QueryPerformanceCounter`.
