@@ -60,14 +60,7 @@ Two results surprised me, and one of them nearly broke the whole premise.
 
 ### Writes are not always the expensive operation
 
-The entire project assumes writing to disk costs more than reading. So I measured it. On my laptop's hard drive:
-
-| Mode | Read | Write | Write / read |
-|---|---|---|---|
-| Normal write-through | 949 µs | 534 µs | **0.56** |
-| Flush after every write | 930 µs | 21,692 µs | **23.34** |
-
-A write costs about half a read until you demand durability. Then it costs twenty-three reads. Same machine, same file, one config flag. That's a factor of forty, and it decides whether protecting changed pages is worth anything at all. This is why the program measures your disk instead of assuming a number.
+The entire project assumes writing to disk costs more than reading. A write costs about half a read until you demand durability. Then it costs twenty-three reads. Same machine, same file, one config flag. That's a factor of forty, and it decides whether protecting changed pages is worth anything at all. This is why the program measures your disk instead of assuming a number.
 
 ### A good-looking result can come from a broken algorithm
 
